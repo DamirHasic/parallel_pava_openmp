@@ -1,0 +1,18 @@
+# build outputs
+*.o
+*.so
+__pycache__/
+experiments/run
+experiments/compare
+bandwidth/run_stream
+bandwidth/stream_*
+instance_generators/*/gen_*
+!instance_generators/*/gen_*.cpp
+
+# generated data (instances are 8n bytes each: 800 MB for n = 1e8)
+*.bin
+*.wbin
+instance_generators/*/instances/
+experiments/results/
+bandwidth/results/
+
